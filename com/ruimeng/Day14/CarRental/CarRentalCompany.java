@@ -55,6 +55,7 @@ public class CarRentalCompany {
             }
         } else {
             moto = new Bus();
+//            Bus bus = (Bus)moto;
             do {
                 System.out.print("请输入要租赁客车的载客数：");
                 userInput = sc.nextInt();
