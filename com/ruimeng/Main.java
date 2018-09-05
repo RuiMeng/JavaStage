@@ -3,7 +3,6 @@ package com.ruimeng;
 import com.ruimeng.Day09.PrintGoodsInfo;
 import com.ruimeng.Day09.PrintPrivateInfo;
 import com.ruimeng.Day10.PhoneInfo;
-import com.ruimeng.Day12.DebugCode;
 
 public class Main {
 
