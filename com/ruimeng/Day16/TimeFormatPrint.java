@@ -21,7 +21,7 @@ public class TimeFormatPrint {
     public static int weekNoInYear() {
 
         Calendar c = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 //        System.out.println(sdf.format(c.getTime()));
 
         c.set(Calendar.YEAR, 2017);
