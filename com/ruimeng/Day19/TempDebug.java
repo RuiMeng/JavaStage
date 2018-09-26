@@ -1,17 +1,27 @@
 package com.ruimeng.Day19;
 
-public class TempDebug {
+abstract class Parent{
 
-    public static void main(String[] args) {
+    abstract void show1();
+}
 
-        System.out.println("good");
+class Test1 extends Parent {
 
-        // 文件复制我得从文件的二进制层面去考察复制的效果，如果从文本的显示层面考察，可能会由于文件编码格式导致一些问题发现不了。
-        // byte 数组创建时候分配的初始值是多少？
-        // InputStream.read(byte[] b) 读到数据量不足填充 b 会怎样。
-        // OutputStream.write(byte[] c) 写入的细节，比如我写入一个未初始化过的 byte 数组会咋样。
-        // 当然还涉及到文件编码的问题。
-        // 既然用起来这么麻烦，应该有别的解决方案吧。
+    public void show1() {
+        System.out.println("test1 类的 show1() 方法。");
+    }
+}
 
+class Test2 extends Parent {
+
+    public void show1() {
+        System.out.println("test2 类的 show1() 方法。");
+    }
+    public static void main(String[] args){
+        // 这里就是一个多态的表现
+        Parent p1 = new Test1();
+        p1.show1();
+        p1 = new Test2();
+        p1.show1();
     }
 }
